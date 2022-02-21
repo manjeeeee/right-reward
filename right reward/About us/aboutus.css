@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* navbar start here  */
+
+
+
+body{
+    overflow-x: hidden;
+}
+
+nav{
+    background: #6c58d9;
+    padding: 5px 40px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li{
+    padding: 15px 0px;
+    cursor: pointer;
+  
+}
+
+nav ul li.item{
+    position: relative;
+    width: auto;
+    margin: 0 16px;
+    text-align: center;
+    order: 3;
+}
+
+nav ul li.item:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 5px;
+    height: 2px;
+    width: 100%;
+    background: #33ffff;
+    opacity: 0;
+    transition: all 0.2s linear;
+    
+}
+
+nav ul li.item:hover:after{
+    opacity: 1;
+    bottom: 8px;
+}
+
+nav ul li.logo{
+    flex: 1;
+    color: #fff;
+    font-size: 23px;
+    font-weight: 600;
+    cursor: default;
+    user-select: none;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: .4s;
+}
+
+nav ul li:hover a{
+    color: black;
+
+}
+
+nav ul li i{
+    font-size: 23px;
+}
+
+nav ul li.btn{
+    display: none;
+}
+
+nav ul li.btn.show i:before{
+  content: '\f00d';
+}
+
+@media all and (max-width: 900px){
+    nav{
+        padding: 5px 30px;
+    }
+
+    nav ul li.item{
+        width: 100%;
+        display: none;  //javascript use here.
+
+    }
+
+    nav ul li.item.show{
+        display: block;
+    }
+    nav ul li.btn{
+        display: block;
+    }
+    nav ul li.item:hover{
+        border-radius: 5px;
+        box-shadow: inset 0 0 5px #33ffff,
+                   inset 0 0 10px #66ffff;
+    }
+    nav ul li.item:hover:after{
+        opacity: 0;
+    }
+}
+
+/* navbar ends here  */
+
+
+
+
+
+
+
+/* headerimage start here  */
+
+#image{
+    /* background-image: linear-gradient(rgba(3, 3, 3,0.3), rgba(55, 56, 53, 0.3)), url(../images/buss.jpg); */
+    background-image: linear-gradient(rgba(0,168,255,0.3), rgba(0,168,255,0.3)), url(../images/typing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0 75%, 0 0);
+    /* justify-content: center; */
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+}
+
+#image::before{
+   position: absolute;
+   content: "";
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   opacity: 0.4%;
+   z-index: -1;
+   background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+
+}
+
+#image h1{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 45px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    color: #000;
+    margin-bottom: 30px;
+    /* -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px; */
+    /* align-items: center; */
+}
+
+
+#image p{
+    font-size: 15px;
+    font-weight: 400;
+    color: dimgray;
+    display: flex;
+    justify-content: center;
+    /* border: none; */
+    width: 653px;
+    left: -50%;
+    transform: translateX(50%);
+    /* border-radius: 35px; */
+    /* background-color: rgba(30, 197, 55, 0.28); */
+    /* margin-bottom: 70px; */
+}
+
+
+
+/* headerimage ends here  */
+
+
+
+
+/* aboutus content starts here  */
+
+    .content{
+        margin: 70px 0 30px 0;
+    }
+
+
+    .content h1{
+        margin-top: 30px;
+    }
+
+    /* aboutus content ends here  */
+
+
+
+
+
+    /* youtube start here  */
+
+.youtube{
+    margin: 70px 0 30px 0;
+}
+
+/* youtube ends here  */
+
+
+/* address start here  */
+
+/* .address-head{
+    margin: 70px 0 30px 0;
+    padding: 40px 0 80px 0;
+    background: linear-gradient(160deg, #16c9f6 55%, #fff 0%);
+} */
+
+
+
+
+
+
+
+
+
+ 
+ .address-head{
+    margin: 70px 0 30px 0;
+    padding: 40px 0 80px 0;
+   
+} 
+
+
+
+.address{
+    
+    padding: 50px 0 20px 0;
+    background-color: rgb(24, 22, 22);
+
+}
+
+.address h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.address p{
+    line-height: 18px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+
+.address-cont{
+    /* background-color: rgb(194, 192, 192); */
+    background-color: #fff;
+}
+
+.address-cont h3{
+    margin-bottom: 15px;
+    padding-top: 40px;
+    
+}
+
+.address-cont h4{
+    margin-bottom: 10px;
+    
+} 
+
+#hover{
+    margin-top: 20px;
+    transition: 0.4s;
+}
+
+#hover:hover{
+    box-shadow: 6px -3px 14px -3px rgba(0,0,0,0.75);
+}
+
+
+
+
+
+
+
+
+
+
+/* address ends here  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
